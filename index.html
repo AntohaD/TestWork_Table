@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Orders</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./data/data.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/modalWin.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>Orders</h2>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Document number</th>
+                <th>Date Document</th>
+                <th>Date Created</th>
+                <th>Date Submited</th>
+                <th>Client</th>
+                <th>Submited</th>
+                <th></th>
+            </tr>
+        </thead>
+    </table>
+</div>
+<div style="text-align: center" id="popupWin" class="modalwin">
+    <button type="button" class="close" id="btnClose" data-dismiss="modal">&times;</button>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Date Document</th>
+                <th>Date Created</th>
+                <th>Date Submited</th>
+                <th>Client</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input class="form-control" type="text" id="dDoc">
+                </td>
+                <td>
+                    <input class="form-control" type="text" id="dDat">
+                </td>
+                <td>
+                    <input class="form-control" type="text" id="dSub">
+                </td>
+                <td>
+                    <select class="form-control" id="client">
+                        <option value="Client1">Client1</option>
+                        <option value="Client2">Client2</option>
+                        <option value="Client3">Client3</option>
+                        <option value="Client4">Client4</option>
+                        <option value="Client5">Client5</option>
+                        <option value="Client6">Client6</option>
+                        <option value="Client7">Client7</option>
+                        <option value="Client8">Client8</option>
+                        <option value="Client9">Client9</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" id="bSave">Save</button>
+    </div>
+</div>
+</body>
+</html>
